@@ -39,7 +39,7 @@ TARGET_KERNEL_CONFIG := cyanogenmod_angler_defconfig
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
-KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/toolchain/linaro-5.1-2015.08/bin"
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/toolchain/linaro-5.2-2015.11/bin"
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 BOARD_KERNEL_BASE        := 0x00000000
@@ -115,6 +115,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.angler
 
 TARGET_RECOVERY_FSTAB = device/huawei/angler/fstab.angler
+# Build f2fstools
+TARGET_USERIMAGES_USE_F2FS := true
+
 # write vendor modules to system
 TARGET_COPY_OUT_VENDOR := system
 TARGET_RELEASETOOLS_EXTENSIONS := device/huawei/angler
