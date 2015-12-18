@@ -321,7 +321,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicecall=true \
     persist.audio.fluence.voicecomm=true \
     persist.audio.product.identify="angler" \
-    persist.audio.fluence.speaker=true
+    persist.audio.fluence.speaker=true \
+    audio.offload.pcm.24bit.enable=true
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
