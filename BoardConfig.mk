@@ -39,7 +39,7 @@ TARGET_KERNEL_CONFIG := cyanogenmod_angler_defconfig
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
-KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/toolchain/linaro-5.2-2015.11/bin"
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/toolchain/linaro-4.9-2014.05/bin"
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 BOARD_KERNEL_BASE        := 0x00000000
