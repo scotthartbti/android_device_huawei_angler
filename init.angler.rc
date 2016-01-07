@@ -65,6 +65,9 @@ on boot
     # Enable DEBUG_SUSPEND, DEBUG_EXIT_SUSPEND, and DEBUG_WAKEUP
     write /sys/module/wakelock/parameters/debug_mask 7
 
+    # big cluster
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 384000
+
     # update foreground cpuset now that processors are up
     write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/foreground/boost/cpus 4-7
