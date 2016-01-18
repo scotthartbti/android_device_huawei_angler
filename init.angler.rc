@@ -482,3 +482,8 @@ service diag_test_server /vendor/bin/diag_test_server
 
 on property:ro.boot.mode=hw-factory
     start diag_test_server
+
+on property:sys.boot_completed=1
+    write /sys/kernel/mm/ksm/sleep_millisecs 1500
+    write /sys/kernel/mm/ksm/pages_to_scan 256
+    write /sys/kernel/mm/ksm/deferred_timer 1
