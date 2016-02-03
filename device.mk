@@ -156,8 +156,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors \
-    libqcompostprocbundle \
-    libtinyxml
+    libqcompostprocbundle
 
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
