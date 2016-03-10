@@ -58,9 +58,6 @@ on boot
     # Enable DEBUG_SUSPEND, DEBUG_EXIT_SUSPEND, and DEBUG_WAKEUP
     write /sys/module/wakelock/parameters/debug_mask 7
 
-    # small cluster
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 302400
-
     # big cluster
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 384000
 
