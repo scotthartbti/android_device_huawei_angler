@@ -156,7 +156,4 @@ EXTENDED_FONT_FOOTPRINT := true
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS := device/huawei/angler/cmhw/
 
-# Enable workaround for slow rom flash
-BOARD_SUPPRESS_SECURE_ERASE := true
-
 -include vendor/huawei/angler/BoardConfigVendor.mk
