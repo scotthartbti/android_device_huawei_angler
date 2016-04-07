@@ -209,13 +209,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.angler
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.cpp.duplication=false
-
 PRODUCT_COPY_FILES += \
     device/huawei/angler/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/huawei/angler/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
